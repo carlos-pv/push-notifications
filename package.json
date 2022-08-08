@@ -1,6 +1,6 @@
 {
   "name": "push-notifications-ios-fix",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "The Push Notifications API provides access to native push notifications Fix for iOS.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
