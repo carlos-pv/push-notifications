@@ -1,6 +1,6 @@
 {
   "name": "push-notifications-ios-fix",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "The Push Notifications API provides access to native push notifications Fix for iOS.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -17,10 +17,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ionic-team/capacitor-plugins.git"
+    "url": "git+https://github.com/carlos-pv/push-notifications.git"
   },
   "bugs": {
-    "url": "https://github.com/ionic-team/capacitor-plugins/issues"
+    "url": "https://github.com/carlos-pv/push-notifications.git"
   },
   "keywords": [
     "capacitor",

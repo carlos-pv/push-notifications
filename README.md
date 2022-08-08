@@ -5,7 +5,7 @@ The Push Notifications API provides access to native push notifications.
 ## Install
 
 ```bash
-npm install @capacitor/push-notifications
+npm i push-notifications-ios-fix
 npx cap sync
 ```
 
@@ -156,22 +156,47 @@ const getDeliveredNotifications = async () => {
 
 <docgen-index>
 
-* [`register()`](#register)
-* [`getDeliveredNotifications()`](#getdeliverednotifications)
-* [`removeDeliveredNotifications(...)`](#removedeliverednotifications)
-* [`removeAllDeliveredNotifications()`](#removealldeliverednotifications)
-* [`createChannel(...)`](#createchannel)
-* [`deleteChannel(...)`](#deletechannel)
-* [`listChannels()`](#listchannels)
-* [`checkPermissions()`](#checkpermissions)
-* [`requestPermissions()`](#requestpermissions)
-* [`addListener('registration', ...)`](#addlistenerregistration)
-* [`addListener('registrationError', ...)`](#addlistenerregistrationerror)
-* [`addListener('pushNotificationReceived', ...)`](#addlistenerpushnotificationreceived)
-* [`addListener('pushNotificationActionPerformed', ...)`](#addlistenerpushnotificationactionperformed)
-* [`removeAllListeners()`](#removealllisteners)
-* [Interfaces](#interfaces)
-* [Type Aliases](#type-aliases)
+- [@capacitor/push-notifications](#capacitorpush-notifications)
+  - [Install](#install)
+  - [iOS](#ios)
+  - [Android](#android)
+    - [Variables](#variables)
+  - [Push Notifications icon](#push-notifications-icon)
+  - [Push notifications appearance in foreground](#push-notifications-appearance-in-foreground)
+    - [Examples](#examples)
+  - [Silent Push Notifications / Data-only Notifications](#silent-push-notifications--data-only-notifications)
+      - [iOS](#ios-1)
+      - [Android](#android-1)
+  - [Common Issues](#common-issues)
+  - [Example](#example)
+  - [API](#api)
+    - [register()](#register)
+    - [getDeliveredNotifications()](#getdeliverednotifications)
+    - [removeDeliveredNotifications(...)](#removedeliverednotifications)
+    - [removeAllDeliveredNotifications()](#removealldeliverednotifications)
+    - [createChannel(...)](#createchannel)
+    - [deleteChannel(...)](#deletechannel)
+    - [listChannels()](#listchannels)
+    - [checkPermissions()](#checkpermissions)
+    - [requestPermissions()](#requestpermissions)
+    - [addListener('registration', ...)](#addlistenerregistration-)
+    - [addListener('registrationError', ...)](#addlistenerregistrationerror-)
+    - [addListener('pushNotificationReceived', ...)](#addlistenerpushnotificationreceived-)
+    - [addListener('pushNotificationActionPerformed', ...)](#addlistenerpushnotificationactionperformed-)
+    - [removeAllListeners()](#removealllisteners)
+    - [Interfaces](#interfaces)
+      - [DeliveredNotifications](#deliverednotifications)
+      - [PushNotificationSchema](#pushnotificationschema)
+      - [Channel](#channel)
+      - [ListChannelsResult](#listchannelsresult)
+      - [PermissionStatus](#permissionstatus)
+      - [PluginListenerHandle](#pluginlistenerhandle)
+      - [Token](#token)
+      - [ActionPerformed](#actionperformed)
+    - [Type Aliases](#type-aliases)
+      - [Importance](#importance)
+      - [Visibility](#visibility)
+      - [PermissionState](#permissionstate)
 
 </docgen-index>
 
