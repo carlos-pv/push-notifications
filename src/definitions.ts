@@ -160,6 +160,15 @@ export interface PushNotificationsPlugin {
     listenerFunc: (notification: ActionPerformed) => void,
   ): Promise<PluginListenerHandle> & PluginListenerHandle;
 
+     /**
+   * Called when the device receives a push notification Works on iOS. Use this for iOS.
+   *
+   * @since 1.0.0
+   */
+      addListener(
+        eventName: 'OnRemoteNotification',
+        listenerFunc: (notification: PushNotificationSchema) => void,
+      ): Promise<PluginListenerHandle> & PluginListenerHandle;
   /**
    * Remove all native listeners for this plugin.
    *

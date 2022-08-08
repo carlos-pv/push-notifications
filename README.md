@@ -169,6 +169,7 @@ const getDeliveredNotifications = async () => {
 * [`addListener('registrationError', ...)`](#addlistenerregistrationerror)
 * [`addListener('pushNotificationReceived', ...)`](#addlistenerpushnotificationreceived)
 * [`addListener('pushNotificationActionPerformed', ...)`](#addlistenerpushnotificationactionperformed)
+* [`addListener('OnRemoteNotification', ...)`](#addlisteneronremotenotification)
 * [`removeAllListeners()`](#removealllisteners)
 * [Interfaces](#interfaces)
 * [Type Aliases](#type-aliases)
@@ -413,6 +414,26 @@ Called when an action is performed on a push notification.
 | ------------------ | -------------------------------------------------------------------------------------- |
 | **`eventName`**    | <code>'pushNotificationActionPerformed'</code>                                         |
 | **`listenerFunc`** | <code>(notification: <a href="#actionperformed">ActionPerformed</a>) =&gt; void</code> |
+
+**Returns:** <code>Promise&lt;<a href="#pluginlistenerhandle">PluginListenerHandle</a>&gt; & <a href="#pluginlistenerhandle">PluginListenerHandle</a></code>
+
+**Since:** 1.0.0
+
+--------------------
+
+
+### addListener('OnRemoteNotification', ...)
+
+```typescript
+addListener(eventName: 'OnRemoteNotification', listenerFunc: (notification: PushNotificationSchema) => void) => Promise<PluginListenerHandle> & PluginListenerHandle
+```
+
+Called when the device receives a push notification Works on iOS. Use this for iOS.
+
+| Param              | Type                                                                                                 |
+| ------------------ | ---------------------------------------------------------------------------------------------------- |
+| **`eventName`**    | <code>'OnRemoteNotification'</code>                                                                  |
+| **`listenerFunc`** | <code>(notification: <a href="#pushnotificationschema">PushNotificationSchema</a>) =&gt; void</code> |
 
 **Returns:** <code>Promise&lt;<a href="#pluginlistenerhandle">PluginListenerHandle</a>&gt; & <a href="#pluginlistenerhandle">PluginListenerHandle</a></code>
 
