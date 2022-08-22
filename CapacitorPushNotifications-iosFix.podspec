@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.license = package['license']
   s.homepage = 'https://capacitorjs.com'
   s.author = package['author']
-  s.source = { :git => 'https://github.com/carlos-pv/push-notifications.git', :tag => package['name'] + '@' + package['version'] }
+  s.source = { :git => 'git@github.com:pedro-pv/push-notifications.git', :tag => package['name'] + '@' + package['version'] }
   s.source_files = 'ios/Plugin/**/*.{swift,h,m,c,cc,mm,cpp}', 'push-notifications/ios/Plugin/**/*.{swift,h,m,c,cc,mm,cpp}'
   s.ios.deployment_target  = '12.0'
   s.dependency 'Capacitor'
